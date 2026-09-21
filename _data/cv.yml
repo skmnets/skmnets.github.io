@@ -73,12 +73,58 @@ cv:
           - "Surveyed systemic-risk models in banking networks (Eisenberg–Noe, DebtRank) and compared structural properties of Indian and Mexican interbank networks."
 
     Publications:
-      - bullet: "**Normalized Routing Limits for Pruned Neural Networks: NNGP and NTK across Density Regimes.** Siddhi Kanta Mishra and Ivan Garibay. Accepted at the *Learning on Graphs Conference (LoG 2026)*; forthcoming in PMLR."
-      - bullet: "**Community Information Horizons in Discrete Graph Diffusion: A Graphon Analysis.** Siddhi Kanta Mishra and Ivan Garibay. Accepted at the *Learning on Graphs Conference (LoG 2026)*; forthcoming in PMLR."
-      - bullet: "**Learning Where to Communicate in GNNs: Task-Conditioned Edge Scores Across Graph Sizes.** Siddhi Kanta Mishra and Ivan Garibay. *Manuscript under review at ICLR 2027*."
-      - bullet: "**MoCDiff: Efficient Motif-Constrained Discrete Diffusion for Molecule Generation.** Tasfia Nuzhat Ornee, Mohammad Jahid Ibna Basher, Siddhi Kanta Mishra, Ozlem Garibay, Ivan Garibay, and Niloofar Yousefi. *ICML 2026 Workshop on Generative and Agentic AI for Biology*."
-      - bullet: "**Beyond Edge Prediction: Residual Set Modeling for Combinatorial Gene Regulation.** Maryam Rahimimovassagh, Siddhi Kanta Mishra, Ivan Garibay, and Niloofar Yousefi. *Gen² Workshop at ICLR 2026*."
-      - bullet: "**From Edge Detection to Regulatory Logic Discovery: Residual Set Models for Exact Regulator Recovery in Gene Regulatory Networks.** Siddhi Kanta Mishra, Maryam Rahimimovassagh, Niloofar Yousefi, and Ivan Garibay. *MLGenX Workshop at ICLR 2026*."
+      - title: "Normalized Routing Limits for Pruned Neural Networks: NNGP and NTK across Density Regimes"
+        authors:
+          - "Siddhi Kanta Mishra"
+          - "Ivan Garibay"
+        publisher: "Learning on Graphs Conference (LoG 2026), Proceedings of Machine Learning Research (PMLR)"
+        releaseDate: "2026"
+        summary: "Accepted at the Learning on Graphs Conference (LoG 2026); forthcoming in PMLR."
+
+      - title: "Community Information Horizons in Discrete Graph Diffusion: A Graphon Analysis"
+        authors:
+          - "Siddhi Kanta Mishra"
+          - "Ivan Garibay"
+        publisher: "Learning on Graphs Conference (LoG 2026), Proceedings of Machine Learning Research (PMLR)"
+        releaseDate: "2026"
+        summary: "Accepted at the Learning on Graphs Conference (LoG 2026); forthcoming in PMLR."
+
+      - title: "Learning Where to Communicate in GNNs: Task-Conditioned Edge Scores Across Graph Sizes"
+        authors:
+          - "Siddhi Kanta Mishra"
+          - "Ivan Garibay"
+        publisher: "Manuscript under review at ICLR 2027"
+        releaseDate: "2026"
+        summary: "Manuscript under review at ICLR 2027."
+
+      - title: "MoCDiff: Efficient Motif-Constrained Discrete Diffusion for Molecule Generation"
+        authors:
+          - "Tasfia Nuzhat Ornee"
+          - "Mohammad Jahid Ibna Basher"
+          - "Siddhi Kanta Mishra"
+          - "Ozlem Garibay"
+          - "Ivan Garibay"
+          - "Niloofar Yousefi"
+        publisher: "ICML 2026 Workshop on Generative and Agentic AI for Biology"
+        releaseDate: "2026"
+
+      - title: "Beyond Edge Prediction: Residual Set Modeling for Combinatorial Gene Regulation"
+        authors:
+          - "Maryam Rahimimovassagh"
+          - "Siddhi Kanta Mishra"
+          - "Ivan Garibay"
+          - "Niloofar Yousefi"
+        publisher: "Gen² Workshop at ICLR 2026"
+        releaseDate: "2026"
+
+      - title: "From Edge Detection to Regulatory Logic Discovery: Residual Set Models for Exact Regulator Recovery in Gene Regulatory Networks"
+        authors:
+          - "Siddhi Kanta Mishra"
+          - "Maryam Rahimimovassagh"
+          - "Niloofar Yousefi"
+          - "Ivan Garibay"
+        publisher: "MLGenX Workshop at ICLR 2026"
+        releaseDate: "2026"
 
     Selected Presentations:
       - bullet: "**From Graphons to Graphlets: A Graph-Limit Lens on Sparse Neural Connectivity and Training.** Siddhi Kanta Mishra and Ivan Garibay. Contributed oral presentation at the *Network Science Informs AI (NSIA) Satellite, NetSci 2026* ([Presentation details](https://network-science-ai.github.io/index.html))."
