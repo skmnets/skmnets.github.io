@@ -1,10 +1,27 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> MoCDiff: Efficient Motif-Constrained Discrete Diffusion | Siddhi Kanta Mishra </title> <meta name="author" content="Siddhi Kanta Mishra"> <meta name="description" content="Motif-aware serialization (mSENT) and optimized constrained sampling for molecular graph generation. ICML 2026 Workshop."> <meta name="keywords" content="graph machine learning, graphons, graph limits, sparse neural networks, neural tangent kernels, discrete diffusion, complex adaptive systems, UCF, Siddhi Kanta Mishra"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> MoCDiff: Efficient Motif-Constrained Discrete Diffusion | Siddhi Kanta Mishra </title> <meta name="author" content="Siddhi Kanta Mishra"> <meta name="description" content="Motif-aware serialization (mSENT) and optimized constrained sampling for molecular graph generation. ICML 2026 Workshop."> <meta name="keywords" content="graph machine learning, graph limits, network science, sparse neural networks, graph diffusion, graphons, complex adaptive systems, UCF, Siddhi Kanta Mishra"> <meta property="og:site_name" content="Siddhi Kanta Mishra"> <meta property="og:type" content="website"> <meta property="og:title" content="Siddhi Kanta Mishra | MoCDiff: Efficient Motif-Constrained Discrete Diffusion"> <meta property="og:url" content="https://skmnets.github.io/projects/4_project/"> <meta property="og:description" content="Motif-aware serialization (mSENT) and optimized constrained sampling for molecular graph generation. ICML 2026 Workshop."> <meta property="og:image" content="https://skmnets.github.io/assets/img/prof_pic.png"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="MoCDiff: Efficient Motif-Constrained Discrete Diffusion"> <meta name="twitter:description" content="Motif-aware serialization (mSENT) and optimized constrained sampling for molecular graph generation. ICML 2026 Workshop."> <meta name="twitter:image" content="https://skmnets.github.io/assets/img/prof_pic.png"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Siddhi Kanta Mishra"
+        },
+        "url": "https://skmnets.github.io/projects/4_project/",
+        "@type": "WebSite",
+        "description": "Motif-aware serialization (mSENT) and optimized constrained sampling for molecular graph generation. ICML 2026 Workshop.",
+        "headline": "MoCDiff: Efficient Motif-Constrained Discrete Diffusion",
+        
+        "sameAs": ["https://scholar.google.com/citations?user=Rd2vryMAAAAJ","https://github.com/skmnets","https://openreview.net/profile?id=~Siddhi_Kanta_Mishra1","https://www.linkedin.com/in/siddhi-kanta-mishra-9b7487133"],
+        
+        "name": "Siddhi Kanta Mishra",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://skmnets.github.io/projects/4_project/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Siddhi Kanta</span> Mishra </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">MoCDiff: Efficient Motif-Constrained Discrete Diffusion</h1> <p class="post-description">Motif-aware serialization (mSENT) and optimized constrained sampling for molecular graph generation. ICML 2026 Workshop.</p> </header> <article> <h3 id="overview">Overview</h3> <p>Generating realistic molecular graphs using generative models requires navigating vast discrete chemical spaces while producing valid, novel, and diverse compounds within practical computational budgets. Serializing molecular graphs into discrete token sequences allows leveraging scalable masked language modeling (MDLM) frameworks, but introduces two critical challenges:</p> <ol> <li> <strong>The Token-Order Problem</strong>: Standard string formats (SMILES, SELFIES, SENT) order atoms based on syntax or depth-first graph traversal rather than chemical locality. Consequently, chemically coupled atoms within rigid ring systems or aromatic cores are scattered across distant sequence positions, forcing models to learn local chemical constraints through long-range token dependencies.</li> <li> <strong>The Constraint-Enforcement Problem</strong>: Verifying chemical validity and uniqueness requires discrete decoding and RDKit sanitization. Existing frameworks like Constrained Discrete Diffusion (CDD) project token probabilities toward feasible sets at every reverse diffusion step, resulting in prohibitive wall-clock runtimes and redundant corrections on highly noisy intermediate states.</li> </ol> <h3 id="core-innovations">Core Innovations</h3> <ul> <li> <strong>Motif-Aware SENT Tokenization (mSENT)</strong>: We introduce a motif-biased traversal policy that prioritizes chemically coherent substructures—specifically ring systems, aromatic cores, and multiple bonds. By traversing within-motif neighbors first ($\alpha = 2.0$), mSENT ensures that rigid molecular scaffolds remain contiguous in the serialized sequence. Importantly, because mSENT modifies only the traversal policy without changing the SENT grammar or emission rules, exact graph decodability is preserved.</li> <li> <strong>Optimized Constrained Diffusion Sampler</strong>: We reduce sampling overhead through four coordinated algorithmic enhancements: <ul> <li> <em>Inexact Augmented Lagrangian (ALM) Solves</em>: Stops inner optimization when relaxed constraint improvements plateau, avoiding over-solving early noisy states.</li> <li> <em>Conditionally Adaptive Penalty Updates (CAPU)</em>: Increases penalty weights only for actively violated constraints after discrete decoding, preventing optimization stiffness.</li> <li> <em>Lazy Constraint Enforcement</em>: Skips projection during the first 20% of noisiest diffusion steps ($\rho_s &lt; 0.2$), applies periodic checks during intermediate denoising, and concentrates feasibility enforcement near final decoded molecules ($\rho_s \ge 0.7$).</li> <li> <em>Cached Decode Verification</em>: Avoids redundant sanitization checks for static token spans.</li> </ul> </li> </ul> <h3 id="empirical-findings">Empirical Findings</h3> <ul> <li> <strong>Generation Quality (QM9)</strong>: Under a matched 4-layer, 8-head MDLM Transformer denoiser and identical training budgets, mSENT substantially outperforms standard SENT serialization, increasing validity from $85.3\%$ to $90.5\%$, uniqueness from $75.0\%$ to $97.7\%$, and atom stability from $88.7\%$ to $94.7\%$.</li> <li> <strong>Exploration &amp; Diversity (MOSES)</strong>: On the drug-like MOSES benchmark, unconstrained mSENT achieves $92.0\%$ validity, $99.7\%$ novelty, and an average QED drug-likeness of $0.83$, confirming that motif-aware tokenization fosters broad chemical exploration.</li> <li> <strong>Sampling Efficiency</strong>: On QM9, the optimized MoCDiff sampler reduces candidate generation time from $621.3\text{ s}$ to $383.4\text{ s}$ ($1.62\times$ speedup) and improves accepted-sample throughput from $0.72$ to $1.23\text{ molecules/s}$ over baseline CDD. On MOSES, it achieves a $1.38\times$ speedup with $91.0\%$ acceptance.</li> </ul> <p><em>Accepted to the <strong>ICML 2026 Workshop on Generative and Agentic AI for Biology</strong>.</em></p> </article> <h2>References</h2> <div class="publications"> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Siddhi Kanta Mishra. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: September 21, 2026. </div> </footer> <script>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Siddhi Kanta Mishra </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">MoCDiff: Efficient Motif-Constrained Discrete Diffusion</h1> <p class="post-description">Motif-aware serialization (mSENT) and optimized constrained sampling for molecular graph generation. ICML 2026 Workshop.</p> </header> <article> <h3 id="question">Question</h3> <p>How can discrete masked diffusion models generate molecular graphs while maintaining chemical validity, diversity, and computational efficiency within practical sampling budgets?</p> <h3 id="key-idea">Key Idea</h3> <p>Standard string tokenizations decouple chemically coupled atoms in rings and scaffolds across distant sequence positions, while standard constrained sampling incurs heavy computational overhead on early noisy states. We address both challenges through motif-aware graph serialization and multi-stage constrained sampling.</p> <h3 id="main-results">Main Results</h3> <ul> <li> <strong>Motif-Aware SENT Tokenization (mSENT)</strong>: We introduce a motif-biased traversal policy that prioritizes chemically coherent substructures (rings, aromatic cores, multiple bonds). Traversing within-motif neighbors first keeps rigid molecular scaffolds contiguous in sequence space while preserving exact graph decodability.</li> <li> <strong>Optimized Constrained Diffusion Sampler</strong>: Sampling efficiency is improved through four coordinated algorithmic components: inexact Augmented Lagrangian updates, conditionally adaptive penalties for actively violated constraints, lazy constraint enforcement (skipping projections during noisy early steps $\rho_s &lt; 0.2$), and cached decode verification.</li> <li> <strong>Empirical Performance on QM9 &amp; MOSES</strong>: Under matched Transformer denoisers, mSENT raises QM9 validity from $85.3\%$ to $90.5\%$ and uniqueness from $75.0\%$ to $97.7\%$ over standard SENT. The optimized sampler achieves a $1.62\times$ candidate generation speedup and $1.7\times$ higher accepted throughput over baseline Constrained Discrete Diffusion. On MOSES, it achieves $92.0\%$ validity and $99.7\%$ novelty.</li> </ul> <h3 id="publication-and-status">Publication and Status</h3> <p>Accepted at the <strong>ICML 2026 Workshop on Generative and Agentic AI for Biology</strong>.</p> </article> <h2>References</h2> <div class="publications"> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Siddhi Kanta Mishra. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: September 21, 2026. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -24,7 +41,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          description: "Publications, preprints, and selected presentations.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -81,17 +98,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
       },{id: "post-a-post-with-tabs",
@@ -325,17 +331,6 @@ ninja.data = [{
             window.location.href = "/blog/2022/rtl/";
           
         },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
       },{id: "post-a-post-with-redirect",
         
           title: "a post with redirect",
@@ -446,12 +441,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-motif-constrained-discrete-diffusion-mocdiff-efficient-motif-constrained-discrete-diffusion-for-molecule-generation-accepted-to-the-icml-2026-workshop-on-generative-and-agentic-ai-for-biology",
           title: '🧬 Our paper on motif-constrained discrete diffusion, MoCDiff: Efficient Motif-Constrained Discrete Diffusion for...',
           description: "",
-          section: "News",},{id: "news-two-full-proceedings-papers-accepted-at-learning-on-graphs-log-2026-normalized-routing-limits-for-pruned-neural-networks-and-community-information-horizons-in-discrete-graph-diffusion-a-graphon-analysis-forthcoming-in-pmlr-oct-2026",
-          title: '🎉 Two full proceedings papers accepted at Learning on Graphs (LoG 2026): Normalized...',
+          section: "News",},{id: "news-two-papers-accepted-at-the-learning-on-graphs-conference-log-2026-normalized-routing-limits-for-pruned-neural-networks-and-community-information-horizons-in-discrete-graph-diffusion-a-graphon-analysis-forthcoming-in-pmlr",
+          title: '🎉 Two papers accepted at the Learning on Graphs Conference (LoG 2026): Normalized...',
           description: "",
           section: "News",},{id: "projects-normalized-routing-limits-for-pruned-neural-networks",
           title: 'Normalized Routing Limits for Pruned Neural Networks',
-          description: "NNGP and NTK across density regimes under local retained-fan-in scaling. Forthcoming in PMLR at LoG 2026.",
+          description: "NNGP and NTK limits across density regimes under local retained-fan-in scaling. Forthcoming in PMLR at LoG 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-community-information-horizons-in-discrete-graph-diffusion",
@@ -492,11 +487,18 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=Rd2vryMAAAAJ", "_blank");
         },
       },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/siddhi-kanta-mishra-9b7487133", "_blank");
+          window.open("https://github.com/skmnets", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%53%69%64%64%68%69%4B%61%6E%74%61.%4D%69%73%68%72%61@%75%63%66.%65%64%75", "_blank");
         },
       },{
         id: 'social-custom_social',
@@ -504,6 +506,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://openreview.net/profile?id=~Siddhi_Kanta_Mishra1", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/siddhi-kanta-mishra-9b7487133", "_blank");
         },
       },{
       id: 'light-theme',

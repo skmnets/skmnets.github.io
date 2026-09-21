@@ -1,10 +1,27 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Learning Where to Communicate in GNNs | Siddhi Kanta Mishra </title> <meta name="author" content="Siddhi Kanta Mishra"> <meta name="description" content="Task-conditioned edge scores, activation-gated adjoints, and cross-size transfer via graph limits. Under review at ICLR 2027."> <meta name="keywords" content="graph machine learning, graphons, graph limits, sparse neural networks, neural tangent kernels, discrete diffusion, complex adaptive systems, UCF, Siddhi Kanta Mishra"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Learning Where to Communicate in GNNs | Siddhi Kanta Mishra </title> <meta name="author" content="Siddhi Kanta Mishra"> <meta name="description" content="Task-conditioned edge scores, activation-gated adjoints, and cross-size transfer via graph limits. Under review at ICLR 2027."> <meta name="keywords" content="graph machine learning, graph limits, network science, sparse neural networks, graph diffusion, graphons, complex adaptive systems, UCF, Siddhi Kanta Mishra"> <meta property="og:site_name" content="Siddhi Kanta Mishra"> <meta property="og:type" content="website"> <meta property="og:title" content="Siddhi Kanta Mishra | Learning Where to Communicate in GNNs"> <meta property="og:url" content="https://skmnets.github.io/projects/3_project/"> <meta property="og:description" content="Task-conditioned edge scores, activation-gated adjoints, and cross-size transfer via graph limits. Under review at ICLR 2027."> <meta property="og:image" content="https://skmnets.github.io/assets/img/prof_pic.png"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Learning Where to Communicate in GNNs"> <meta name="twitter:description" content="Task-conditioned edge scores, activation-gated adjoints, and cross-size transfer via graph limits. Under review at ICLR 2027."> <meta name="twitter:image" content="https://skmnets.github.io/assets/img/prof_pic.png"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Siddhi Kanta Mishra"
+        },
+        "url": "https://skmnets.github.io/projects/3_project/",
+        "@type": "WebSite",
+        "description": "Task-conditioned edge scores, activation-gated adjoints, and cross-size transfer via graph limits. Under review at ICLR 2027.",
+        "headline": "Learning Where to Communicate in GNNs",
+        
+        "sameAs": ["https://scholar.google.com/citations?user=Rd2vryMAAAAJ","https://github.com/skmnets","https://openreview.net/profile?id=~Siddhi_Kanta_Mishra1","https://www.linkedin.com/in/siddhi-kanta-mishra-9b7487133"],
+        
+        "name": "Siddhi Kanta Mishra",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://skmnets.github.io/projects/3_project/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Siddhi Kanta</span> Mishra </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Learning Where to Communicate in GNNs</h1> <p class="post-description">Task-conditioned edge scores, activation-gated adjoints, and cross-size transfer via graph limits. Under review at ICLR 2027.</p> </header> <article> <h3 id="overview">Overview</h3> <p>Graph neural networks (GNNs) solve problems by communicating along edges. However, standard message-passing architectures treat all structural connections uniformly, which can suppress relevant variation, introduce spurious correlations, or wash out essential task distinctions. Feature similarity and attention weights measure forward representation similarity or aggregation weighting, but neither indicates the signed local change in task loss when a communication route is perturbed.</p> <p>This project introduces a <strong>task-conditioned edge score</strong> that evaluates whether strengthening or weakening a route locally improves the downstream task objective, and provides a continuous population coordinate system via graph limits to compare and transfer these scores across different graph sizes.</p> <h3 id="theoretical-contributions">Theoretical Contributions</h3> <ul> <li> <strong>Explicit Task-Conditioned Score ($S_W$)</strong>: For nonlinear residual message passing with symmetric mean-normalized difference aggregation, we derive the exact task derivative: \(S_W(u, v) = \frac{\Delta \tau}{2} \sum_{\ell=0}^{L-1} \underbrace{[h^\ell(u) - h^\ell(v)]^\top}_{\text{forward difference}} \underbrace{[r^\ell(u) - r^\ell(v)]}_{\text{gated task sensitivity}}\) where $r^\ell = B_1^\top D\sigma(z^\ell)^\top p^{\ell+1}$ is the backward adjoint sensitivity gated by activation derivatives.</li> <li> <strong>Task Alignment Favors Heterophily</strong>: We show that dissimilar populations can usefully exchange information whenever their representation differences align with backward task differences. The score isolates which distinctions serve the task, demonstrating that useful communication is not restricted to homophilous neighbors.</li> <li> <strong>Conversion to Population Coordinates</strong>: When embedding discrete matrices $A \in \mathbb{R}^{n \times n}$ into continuous graphons $W_A(u, v)$ over equal-width cells of mass $n^{-2}$, we prove the exact coordinate conversion: \(\nabla_A^F J_n(A) = \frac{1}{n^2} G^{(n)}(A)\) This factor of $n^2$ converts unscaled entrywise derivatives into a size-invariant population gradient density.</li> <li> <strong>Finite-Horizon Topology-Learning Consistency</strong>: We prove that the task-conditioned chain is Lipschitz continuous in $L^2$ norms and that correctly scaled finite topology updates track the continuum population dynamics over fixed horizons, whereas unscaled Euclidean updates vanish at order $\mathcal{O}(n^{-2})$.</li> </ul> <h3 id="empirical-findings">Empirical Findings</h3> <ul> <li> <strong>Gating &amp; Heterophily Controls</strong>: Experiments confirm the exactness of the adjoint gradient (worst-case relative error $8.48 \times 10^{-16}$) and verify that activation saturation ($D\sigma$) attenuates sensitivity. On a constructed relational task where target classes share zero cross-covariance with source features, the score correctly identifies and strengthens heterophilous source-target routes (reducing test MSE from $0.992$ to $0.396$).</li> <li> <strong>Cross-Resolution Transfer on METR-LA</strong>: On the 207-sensor METR-LA traffic forecasting benchmark, lifted edge scores computed from independently trained smaller models ($n = 64$ and $n = 128$) guide effective one-step topology interventions on a larger frozen 207-sensor predictor, achieving $83.9\%$ and $90.4\%$ of the native model’s gain.</li> <li> <strong>Survival Under Budget Constraints</strong>: To test whether the score merely reduces destructive mixing, we evaluate interventions under strict total-mass conservation ($\sum_{i &lt; j} \Delta A_{ij} = 0$) and sensor row-sum conservation ($\sum_{j \neq i} \Delta A_{ij} = 0$). Score-guided interventions consistently outperform distance-stratified nulls and uniform shrinkage across all seeds and constraints, confirming that the score accurately identifies <em>where</em> to route information under fixed communication budgets.</li> </ul> <p><em>Under review as a conference paper at <strong>ICLR 2027</strong>.</em></p> </article> <h2>References</h2> <div class="publications"> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Siddhi Kanta Mishra. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: September 21, 2026. </div> </footer> <script>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Siddhi Kanta Mishra </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Learning Where to Communicate in GNNs</h1> <p class="post-description">Task-conditioned edge scores, activation-gated adjoints, and cross-size transfer via graph limits. Under review at ICLR 2027.</p> </header> <article> <h3 id="question">Question</h3> <p>Given that message-passing architectures treat structural connections uniformly, which communication routes actually reduce downstream task loss, and can edge usefulness be compared or transferred across different graph sizes?</p> <h3 id="key-idea">Key Idea</h3> <p>We define a task-conditioned edge score by differentiating the task loss with respect to continuous message-passing weights, decomposing it into forward representation differences and activation-gated backward adjoint sensitivities, and lift the formulation to graphons as a common population coordinate system.</p> <h3 id="main-results">Main Results</h3> <ul> <li> <strong>Explicit Task-Conditioned Score ($S_W$)</strong>: For nonlinear residual message passing with symmetric mean-normalized difference aggregation, we derive the exact task derivative: \(S_W(u, v) = \frac{\Delta \tau}{2} \sum_{\ell=0}^{L-1} \underbrace{[h^\ell(u) - h^\ell(v)]^\top}_{\text{forward difference}} \underbrace{[r^\ell(u) - r^\ell(v)]}_{\text{gated task sensitivity}}\) where $r^\ell = B_1^\top D\sigma(z^\ell)^\top p^{\ell+1}$ is the backward adjoint sensitivity gated by activation derivatives.</li> <li> <strong>Task Alignment Favors Heterophily</strong>: Dissimilar populations can usefully exchange information whenever representation differences align with backward task differences, demonstrating that useful communication is not limited to homophilous neighbors.</li> <li> <strong>Conversion to Population Coordinates</strong>: Embedding discrete adjacency matrices into continuous graphons over cells of mass $n^{-2}$ yields the exact coordinate conversion: \(\nabla_A^F J_n(A) = \frac{1}{n^2} G^{(n)}(A)\) This factor converts unscaled entrywise derivatives into a size-invariant population gradient density. We prove finite-horizon consistency of topology learning in $L^2$.</li> <li> <strong>Cross-Resolution Transfer on METR-LA</strong>: On the 207-sensor METR-LA traffic forecasting benchmark, lifted edge scores computed from independently trained smaller models ($n = 64$ and $n = 128$) guide effective one-step topology interventions on a larger frozen 207-sensor predictor, achieving $83.9\%$ and $90.4\%$ of native model improvements under strict mass-conservation constraints.</li> </ul> <h3 id="publication-and-status">Publication and Status</h3> <p><em>Manuscript under review at ICLR 2027.</em></p> </article> <h2>References</h2> <div class="publications"> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Siddhi Kanta Mishra. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: September 21, 2026. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -24,7 +41,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          description: "Publications, preprints, and selected presentations.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -81,17 +98,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
-      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-        
-          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
           
         },
       },{id: "post-a-post-with-tabs",
@@ -325,17 +331,6 @@ ninja.data = [{
             window.location.href = "/blog/2022/rtl/";
           
         },
-      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-        
-          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-          
-        },
       },{id: "post-a-post-with-redirect",
         
           title: "a post with redirect",
@@ -446,12 +441,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-motif-constrained-discrete-diffusion-mocdiff-efficient-motif-constrained-discrete-diffusion-for-molecule-generation-accepted-to-the-icml-2026-workshop-on-generative-and-agentic-ai-for-biology",
           title: '🧬 Our paper on motif-constrained discrete diffusion, MoCDiff: Efficient Motif-Constrained Discrete Diffusion for...',
           description: "",
-          section: "News",},{id: "news-two-full-proceedings-papers-accepted-at-learning-on-graphs-log-2026-normalized-routing-limits-for-pruned-neural-networks-and-community-information-horizons-in-discrete-graph-diffusion-a-graphon-analysis-forthcoming-in-pmlr-oct-2026",
-          title: '🎉 Two full proceedings papers accepted at Learning on Graphs (LoG 2026): Normalized...',
+          section: "News",},{id: "news-two-papers-accepted-at-the-learning-on-graphs-conference-log-2026-normalized-routing-limits-for-pruned-neural-networks-and-community-information-horizons-in-discrete-graph-diffusion-a-graphon-analysis-forthcoming-in-pmlr",
+          title: '🎉 Two papers accepted at the Learning on Graphs Conference (LoG 2026): Normalized...',
           description: "",
           section: "News",},{id: "projects-normalized-routing-limits-for-pruned-neural-networks",
           title: 'Normalized Routing Limits for Pruned Neural Networks',
-          description: "NNGP and NTK across density regimes under local retained-fan-in scaling. Forthcoming in PMLR at LoG 2026.",
+          description: "NNGP and NTK limits across density regimes under local retained-fan-in scaling. Forthcoming in PMLR at LoG 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-community-information-horizons-in-discrete-graph-diffusion",
@@ -492,11 +487,18 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=Rd2vryMAAAAJ", "_blank");
         },
       },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/siddhi-kanta-mishra-9b7487133", "_blank");
+          window.open("https://github.com/skmnets", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%53%69%64%64%68%69%4B%61%6E%74%61.%4D%69%73%68%72%61@%75%63%66.%65%64%75", "_blank");
         },
       },{
         id: 'social-custom_social',
@@ -504,6 +506,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://openreview.net/profile?id=~Siddhi_Kanta_Mishra1", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/siddhi-kanta-mishra-9b7487133", "_blank");
         },
       },{
       id: 'light-theme',
