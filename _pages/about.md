@@ -6,6 +6,8 @@ subtitle: Doctoral Researcher in Industrial Engineering & Management Systems, Un
 
 profile:
   align: right
+  image: prof_pic.png
+  image_circular: false
   more_info: >
     <p>Complex Adaptive Systems Laboratory (CASL)</p>
     <p>University of Central Florida</p>
