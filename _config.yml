@@ -7,9 +7,9 @@ first_name: Siddhi Kanta
 middle_name:
 last_name: Mishra
 contact_note: >
-  PhD Student at CASL, University of Central Florida.
+  PhD Student · Complex Adaptive Systems Laboratory · UCF
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  PhD researcher in graph machine learning, graph limits, network science, sparse neural networks, and graph diffusion at UCF.
+  PhD researcher in graph machine learning, graph limits, network science, sparse neural networks, and graph diffusion at the University of Central Florida.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -98,7 +98,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -189,7 +189,7 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
@@ -197,7 +197,7 @@ collections:
   projects:
     output: true
   teachings:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -390,6 +390,7 @@ filtered_bibtex_keywords:
     award_name,
     bibtex_show,
     blog,
+    category,
     code,
     dimensions,
     eprint,

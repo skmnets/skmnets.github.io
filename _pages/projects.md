@@ -9,6 +9,10 @@ display_categories: [Research]
 horizontal: false
 ---
 
+These projects investigate how network structure governs learning, communication, sparsity, and generative dynamics. The work combines graph limits, spectral methods, stochastic models, and neural-network theory with controlled computational experiments.
+
+Current directions span graph neural networks, sparse neural architectures, graph diffusion, and collaborative applications in molecular generation and computational biology.
+
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

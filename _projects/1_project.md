@@ -7,13 +7,13 @@ category: Research
 related_publications: true
 ---
 
-### Question
+### Research Question
 
-When a wide neural network is pruned so aggressively that connection density vanishes ($p_n \to 0$), standard dense graph limits (step graphons) collapse to zero in $L^1$, failing to reflect that individual neurons continue to aggregate growing, structured inputs. What continuum object captures this limiting behavior, and how does pruning affect kernel behavior across density regimes?
+When a wide neural network is pruned so aggressively that connection density vanishes ($p_n \to 0$), standard dense graph limits (step graphons) collapse to zero in $L^1$, failing to reflect that individual neurons continue to aggregate growing, structured inputs. What continuum object captures this limiting behavior, and how does pruning govern kernel behavior across density regimes?
 
-### Key Idea
+### Approach
 
-Under local retained-fan-in normalization ($1/\sqrt{d_i}$), the network does not see raw adjacency mass; instead, it observes a **row-Markov routing operator** $P = D^{-1}M$, which records the relative allocation of retained inputs entering each neuron. We analyze two-hidden-layer networks under independent row-constrained block masks with minimum fan-in growing faster than logarithmically ($k_{\min, n}/\log n \to \infty$).
+Under local retained-fan-in normalization ($1/\sqrt{d_i}$), the network does not see raw adjacency mass; instead, it observes a **row-Markov routing operator** $P = D^{-1}M$, which records the relative allocation of retained inputs entering each neuron. The problem is addressed by analyzing two-hidden-layer networks under independent row-constrained block masks with minimum fan-in growing faster than logarithmically ($k_{\min, n}/\log n \to \infty$).
 
 ### Main Results
 
@@ -22,6 +22,6 @@ Under local retained-fan-in normalization ($1/\sqrt{d_i}$), the network does not
 - **Gaussian-Conditioning Decoupling**: Conditioning second-layer Gaussian weights on the forward-pass subspace bounds sensitivity error by $\mathcal{O}(m / d_{\min, n}^{(2)})$, establishing that weight-reuse effects vanish as width and dataset size $m$ grow.
 - **Spectral Acceleration via Routing**: Altering source allocation while holding density, degree, data, and initialization seeds fixed shifts the label-relevant NTK gain $\tilde{g}_y$ from $1.35$ to $2.61$, directly predicting gradient-flow convergence speed.
 
-### Publication and Status
+### Publication / Status
 
 Accepted at the **Learning on Graphs Conference (LoG 2026)**; forthcoming in the *Proceedings of Machine Learning Research (PMLR)*. Preliminary research presented as a contributed oral talk at the **NetSci 2026** NSIA Satellite.

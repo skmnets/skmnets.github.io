@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 Two papers accepted at the **Learning on Graphs Conference (LoG 2026)**: *Normalized Routing Limits for Pruned Neural Networks* and *Community Information Horizons in Discrete Graph Diffusion: A Graphon Analysis*! Forthcoming in PMLR.
+Two papers accepted at the Learning on Graphs Conference (LoG 2026) on sparse neural routing limits and information horizons in graph diffusion. Both will appear in PMLR.

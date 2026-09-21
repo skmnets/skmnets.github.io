@@ -1,10 +1,9 @@
 cv:
   name: Siddhi Kanta Mishra
-  label: PhD Student
+  headline: "PhD Student · Graph Machine Learning · Graph Limits · Network Science"
   location: Orlando, FL
-  image: ""
-  summary: PhD student in Industrial Engineering & Management Systems at the University of Central Florida (CASL), researching graph machine learning, graph limits, network science, sparse neural networks, and graph diffusion.
-
+  email: SiddhiKanta.Mishra@ucf.edu
+  website: https://skmnets.github.io/
   social_networks:
     - network: LinkedIn
       username: siddhi-kanta-mishra-9b7487133
@@ -13,169 +12,167 @@ cv:
 
   sections:
     Education:
-      - institution: University of Central Florida (UCF)
-        location: Orlando, FL
+      - institution: University of Central Florida
         area: Industrial Engineering and Management Systems
-        studyType: PhD
+        degree: PhD
         start_date: 2025
         end_date: present
-        highlights:
-          - "Expected Summer 2027. Advisor: Prof. Ivan Garibay."
-          - "Research focus: Graph machine learning, graph limits, and network science."
-
-      - institution: University of Central Florida (UCF)
         location: Orlando, FL
+        highlights:
+          - "Advisor: Prof. Ivan Garibay"
+          - "Expected completion: Summer 2027"
+          - "Research focus: Graph machine learning, graph limits, network science, and mathematical foundations of learning on networked systems."
+
+      - institution: University of Central Florida
         area: Mathematical Science
-        studyType: M.S.
+        degree: M.S.
         start_date: 2022
         end_date: 2025
+        location: Orlando, FL
         highlights:
-          - "Recipient of the UCF Dean's Fellowship (2022–2023)."
+          - "Recipient of the UCF Dean's Fellowship."
 
-      - institution: Indian Institute of Science Education and Research (IISER) Kolkata
-        location: Kolkata, India
+      - institution: Indian Institute of Science Education and Research Kolkata
         area: Mathematical Sciences
-        studyType: BS–MS Dual Degree
+        degree: BS–MS Dual Degree
         start_date: 2016
         end_date: 2021
+        location: Kolkata, India
         highlights:
-          - "MS Project: Role of Social Networks in Employment (graph-theoretic and probabilistic labor-market models)."
-          - "INSPIRE Scholarship for Higher Education (INSPIRE-SHE), Department of Science and Technology, Government of India."
+          - "Supported by the INSPIRE Scholarship for Higher Education (INSPIRE-SHE), Department of Science and Technology, Government of India."
+          - "Master's project: Role of Social Networks in Employment, studying graph-theoretic and probabilistic models of labor-market interactions."
 
-    Experience:
+    Research Experience:
       - company: Complex Adaptive Systems Laboratory (CASL), UCF
         position: Graduate Research Assistant
-        location: Orlando, FL
         start_date: 2025
         end_date: present
+        location: Orlando, FL
         summary: "Advisor: Prof. Ivan Garibay"
         highlights:
-          - "Conduct research at the intersection of graph machine learning, network science, graph limits, sparse neural computation, generative graph models, and mathematical foundations of AI."
-          - "Develop theory and reproducible computational experiments connecting population-level graph structure with finite neural-network and graph-learning behavior."
-          - "Characterize communication, routing, diffusion, and representation dynamics in graph-based and sparse learning systems."
+          - "Research on graph machine learning, graph limits, sparse neural computation, and generative graph models. Current work develops theoretical and computational tools for task-conditioned communication in GNNs, continuum limits of sparse neural networks, and structural-information recovery in graph diffusion."
+        bullet: "**Graduate Research Assistant** · Complex Adaptive Systems Laboratory (CASL), UCF (2025–Present)<br>Advisor: Prof. Ivan Garibay<br>Research on graph machine learning, graph limits, sparse neural computation, and generative graph models. Current work develops theoretical and computational tools for task-conditioned communication in GNNs, continuum limits of sparse neural networks, and structural-information recovery in graph diffusion."
 
       - company: Institute of Mathematics, Freie Universität Berlin
         position: Research Intern
-        location: Berlin, Germany
         start_date: 2018-05
         end_date: 2018-07
+        location: Berlin, Germany
         summary: "Supervisor: Prof. Günter M. Ziegler"
         highlights:
           - "Participated in research and coursework in discrete mathematics, combinatorics, and discrete geometry, including the Berlin–Poznań–Hamburg Seminar."
+        bullet: "**Research Intern** · Institute of Mathematics, Freie Universität Berlin (05/2018–07/2018)<br>Supervisor: Prof. Günter M. Ziegler<br>Participated in research and coursework in discrete mathematics, combinatorics, and discrete geometry, including the Berlin–Poznań–Hamburg Seminar."
 
       - company: Indian Institute of Technology Goa
         position: Research Intern
-        location: Goa, India
         start_date: 2020-05
         end_date: 2021-01
+        location: Goa, India
         summary: "Supervisor: Prof. Sunil Paul"
         highlights:
           - "Surveyed systemic-risk models in banking networks (Eisenberg–Noe, DebtRank) and compared structural properties of Indian and Mexican interbank networks."
+        bullet: "**Research Intern** · Indian Institute of Technology Goa (05/2020–01/2021)<br>Supervisor: Prof. Sunil Paul<br>Surveyed systemic-risk models in banking networks (Eisenberg–Noe, DebtRank) and compared structural properties of Indian and Mexican interbank networks."
 
     Publications:
       - title: "Normalized Routing Limits for Pruned Neural Networks: NNGP and NTK across Density Regimes"
         authors:
-          - "Siddhi Kanta Mishra"
+          - "*Siddhi Kanta Mishra*"
           - "Ivan Garibay"
-        publisher: "Learning on Graphs Conference (LoG 2026), Proceedings of Machine Learning Research (PMLR)"
-        releaseDate: "2026"
-        summary: "Accepted at the Learning on Graphs Conference (LoG 2026); forthcoming in PMLR."
+        journal: "Learning on Graphs Conference (LoG 2026), Proceedings of Machine Learning Research (PMLR)"
+        publisher: "*Siddhi Kanta Mishra*, Ivan Garibay"
+        date: "2026"
+        summary: "**Peer-Reviewed Conference Proceedings** · Learning on Graphs Conference (LoG 2026), Proceedings of Machine Learning Research (PMLR), forthcoming."
 
       - title: "Community Information Horizons in Discrete Graph Diffusion: A Graphon Analysis"
         authors:
-          - "Siddhi Kanta Mishra"
+          - "*Siddhi Kanta Mishra*"
           - "Ivan Garibay"
-        publisher: "Learning on Graphs Conference (LoG 2026), Proceedings of Machine Learning Research (PMLR)"
-        releaseDate: "2026"
-        summary: "Accepted at the Learning on Graphs Conference (LoG 2026); forthcoming in PMLR."
+        journal: "Learning on Graphs Conference (LoG 2026), Proceedings of Machine Learning Research (PMLR)"
+        publisher: "*Siddhi Kanta Mishra*, Ivan Garibay"
+        date: "2026"
+        summary: "**Peer-Reviewed Conference Proceedings** · Learning on Graphs Conference (LoG 2026), Proceedings of Machine Learning Research (PMLR), forthcoming."
 
       - title: "Learning Where to Communicate in GNNs: Task-Conditioned Edge Scores Across Graph Sizes"
         authors:
-          - "Siddhi Kanta Mishra"
+          - "*Siddhi Kanta Mishra*"
           - "Ivan Garibay"
-        publisher: "Manuscript under review at ICLR 2027"
-        releaseDate: "2026"
-        summary: "Manuscript under review at ICLR 2027."
+        journal: "Manuscript under review at ICLR 2027"
+        publisher: "*Siddhi Kanta Mishra*, Ivan Garibay"
+        date: "2026"
+        summary: "**Manuscript Under Review** · Manuscript under review at ICLR 2027."
 
       - title: "MoCDiff: Efficient Motif-Constrained Discrete Diffusion for Molecule Generation"
         authors:
           - "Tasfia Nuzhat Ornee"
           - "Mohammad Jahid Ibna Basher"
-          - "Siddhi Kanta Mishra"
+          - "*Siddhi Kanta Mishra*"
           - "Ozlem Garibay"
           - "Ivan Garibay"
           - "Niloofar Yousefi"
-        publisher: "ICML 2026 Workshop on Generative and Agentic AI for Biology"
-        releaseDate: "2026"
+        journal: "ICML 2026 Workshop on Generative and Agentic AI for Biology"
+        publisher: "Tasfia Nuzhat Ornee, Mohammad Jahid Ibna Basher, *Siddhi Kanta Mishra*, Ozlem Garibay, Ivan Garibay, Niloofar Yousefi"
+        date: "2026"
+        summary: "**Workshop Papers** · ICML 2026 Workshop on Generative and Agentic AI for Biology."
 
       - title: "Beyond Edge Prediction: Residual Set Modeling for Combinatorial Gene Regulation"
         authors:
           - "Maryam Rahimimovassagh"
-          - "Siddhi Kanta Mishra"
+          - "*Siddhi Kanta Mishra*"
           - "Ivan Garibay"
           - "Niloofar Yousefi"
-        publisher: "Gen² Workshop at ICLR 2026"
-        releaseDate: "2026"
+        journal: "Gen² Workshop at ICLR 2026"
+        publisher: "Maryam Rahimimovassagh, *Siddhi Kanta Mishra*, Ivan Garibay, Niloofar Yousefi"
+        date: "2026"
+        summary: "**Workshop Papers** · Gen² Workshop at ICLR 2026."
 
       - title: "From Edge Detection to Regulatory Logic Discovery: Residual Set Models for Exact Regulator Recovery in Gene Regulatory Networks"
         authors:
-          - "Siddhi Kanta Mishra"
+          - "*Siddhi Kanta Mishra*"
           - "Maryam Rahimimovassagh"
           - "Niloofar Yousefi"
           - "Ivan Garibay"
-        publisher: "MLGenX Workshop at ICLR 2026"
-        releaseDate: "2026"
+        journal: "Machine Learning for Genomics Explorations (MLGenX) Workshop at ICLR 2026"
+        publisher: "*Siddhi Kanta Mishra*, Maryam Rahimimovassagh, Niloofar Yousefi, Ivan Garibay"
+        date: "2026"
+        summary: "**Workshop Papers** · Machine Learning for Genomics Explorations (MLGenX) Workshop at ICLR 2026."
 
-    Selected Presentations:
-      - bullet: "**From Graphons to Graphlets: A Graph-Limit Lens on Sparse Neural Connectivity and Training.** Siddhi Kanta Mishra and Ivan Garibay. Contributed oral presentation at the *Network Science Informs AI (NSIA) Satellite, NetSci 2026* ([Presentation details](https://network-science-ai.github.io/index.html))."
+    Selected Talks & Presentations:
+      - bullet: "**From Graphons to Graphlets: A Graph-Limit Lens on Sparse Neural Connectivity and Training.** *Siddhi Kanta Mishra*, Ivan Garibay. Contributed oral presentation, Network Science Informs AI (NSIA) Satellite, NetSci 2026, Boston, MA."
 
     Teaching:
-      - company: University of Central Florida
-        position: Graduate Teaching Assistant
-        location: Orlando, FL
-        start_date: 2022
-        end_date: present
-        highlights:
-          - "CAP 6318: Computational Analysis of Social Complexity (Fall 2025, Fall 2026)"
-          - "CAP 6640: Computer Understanding of Natural Language, MSDA Program (Spring 2026)"
-          - "STA 6704: Statistical Data Mining Methodology II, MSDA Program (Summer 2025, Summer 2026)"
-          - "STA 5206: Statistical Analysis (Fall 2025, Summer 2026)"
-          - "MSDA Bridge Program (Statistics and Computer Science, Summer 2025)"
-          - "Mathematics Success Center / MALL (2022–2025)"
-
-      - company: IISER Kolkata
-        position: Graduate Teaching Assistant
-        location: Kolkata, India
-        start_date: 2021
-        end_date: 2021
-        highlights:
-          - "Introduction to Economics (Spring 2021)"
-          - "Probability I (Spring 2021)"
+      - bullet: "**University of Central Florida** — Graduate Teaching Assistant, **CAP 6318: Computational Analysis of Social Complexity** (Fall 2025, Fall 2026)"
+      - bullet: "**University of Central Florida** — Graduate Teaching Assistant, **CAP 6640: Computer Understanding of Natural Language** (Spring 2026)"
+      - bullet: "**University of Central Florida** — Graduate Teaching Assistant, **STA 6704: Statistical Data Mining Methodology II** (Summer 2025, Summer 2026)"
+      - bullet: "**University of Central Florida** — Graduate Teaching Assistant, **STA 5206: Statistical Analysis** (Fall 2025, Summer 2026)"
+      - bullet: "**University of Central Florida** — Graduate Teaching Assistant, **MSDA Bridge Program — Statistics and Computer Science** (Summer 2025)"
+      - bullet: "**University of Central Florida** — Tutor / Assistant, **Mathematics Success Center / MALL** (2022–2025)"
+      - bullet: "**IISER Kolkata** — Graduate Teaching Assistant, **Introduction to Economics** (Spring 2021)"
+      - bullet: "**IISER Kolkata** — Graduate Teaching Assistant, **Probability I** (Spring 2021)"
 
     Awards:
-      - title: UCF Dean's Fellowship
-        awarder: University of Central Florida
-        date: 2022-08-01
-        summary: "Fellowship awarded for graduate studies in Mathematical Science."
+      - name: "UCF Dean's Fellowship"
+        title: "UCF Dean's Fellowship"
+        date: "2022"
+        summary: "University of Central Florida."
 
-      - title: INSPIRE Scholarship for Higher Education (INSPIRE-SHE)
-        awarder: Department of Science and Technology, Government of India
-        date: 2016-08-01
-        summary: "National scholarship awarded to students in the top 1% pursuing natural and basic sciences."
+      - name: "INSPIRE Scholarship for Higher Education (INSPIRE-SHE)"
+        title: "INSPIRE Scholarship for Higher Education (INSPIRE-SHE)"
+        date: "2016"
+        summary: "Department of Science and Technology, Government of India."
 
-      - title: JEE Advanced 2016 — approximately top 0.7%
-        awarder: IITs / Government of India
-        date: 2016-06-01
+      - name: "JEE Advanced 2016 — approximately top 0.7%"
+        title: "JEE Advanced 2016 — approximately top 0.7%"
+        date: "2016"
+        summary: "IITs / Government of India."
 
-    Skills:
-      - name: Programming & Scientific Computing
-        keywords: "Python, PyTorch, NumPy, SciPy, scikit-learn, NetworkX, pandas, Matplotlib, R, MATLAB, LaTeX"
+    Technical Skills:
+      - label: "Programming & Scientific Computing"
+        details: "Python, PyTorch, NumPy, SciPy, scikit-learn, NetworkX, pandas, Matplotlib, R, MATLAB, LaTeX"
+      - label: "Machine Learning & Network Methods"
+        details: "Graph Neural Networks, Graphons, Graph Limits, NTK / NNGP Analysis, Discrete Diffusion Models, Stochastic Block Models, Spectral Graph Theory, Nonparametric Estimation"
 
-      - name: Machine Learning & Network Methods
-        keywords: "Graph Neural Networks, Graphons, Graph Limits, NTK / NNGP Analysis, Discrete Diffusion Models, Stochastic Block Models, Spectral Graph Theory, Nonparametric Estimation"
-
-    Extracurricular Activities and Service:
+    Service & Extracurricular Activities:
       - bullet: "**Rubik's Cube:** Competitive speedcuber with sub-9s average; East India Regional Champion 2017. Conducted speed-cubing workshops with Vedic Maths India and at FU Berlin during the Long Night of Sciences 2018; featured in an Exide Industries commercial. Founded the Rubik's Club at IISER Kolkata in 2018 and the All IISER Cubing Society in 2021."
       - bullet: "**Fest Coordinator, Inquivesta, IISER Kolkata:** Organized WCA-affiliated Rubik's Cube competitions as part of the institute's annual science and culture festival."
-      - bullet: "**Student Coordinator, Center for Career Development, IISER Kolkata** (2019--2021): Facilitated campus recruitment drives, alumni mentorship, and career development programming for students."
-      - bullet: "**Hostel Representative, IISER Kolkata** (2019--2021)"
+      - bullet: "**Student Coordinator, Center for Career Development, IISER Kolkata** (2019–2021): Facilitated campus recruitment drives, alumni mentorship, and career development programming for students."
+      - bullet: "**Hostel Representative, IISER Kolkata** (2019–2021)"

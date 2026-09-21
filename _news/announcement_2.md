@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🧬 Our paper on motif-constrained discrete diffusion, **MoCDiff: Efficient Motif-Constrained Discrete Diffusion for Molecule Generation**, accepted to the **ICML 2026 Workshop on Generative and Agentic AI for Biology**.
+MoCDiff, our work on motif-constrained discrete diffusion for molecular generation, accepted to the ICML 2026 Workshop on Generative and Agentic AI for Biology.

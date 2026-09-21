@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🔬 Presenting our work on combinatorial gene regulatory network modeling (*Residual Set Models*) across two workshops at **ICLR 2026**: Gen² and MLGenX!
+Presented work on combinatorial gene-regulatory inference at the Gen² and MLGenX workshops at ICLR 2026.
