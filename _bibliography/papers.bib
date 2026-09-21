@@ -4,13 +4,14 @@
 @article{mishra2026normalized,
   abbr={LoG 2026},
   bibtex_show={true},
-  title={Normalized Routing Limits for Pruned Neural Networks},
+  title={Normalized Routing Limits for Pruned Neural Networks: NNGP and NTK across Density Regimes},
   author={Mishra, Siddhi Kanta and Garibay, Ivan},
   journal={Learning on Graphs Conference (LoG)},
   series={Proceedings of Machine Learning Research (PMLR)},
+  note={forthcoming (Oct 2026)},
   year={2026},
   selected={true},
-  abstract={We develop a graph-limit framework for width-growing sparse neural networks in which ordinary adjacency graphons collapse under vanishing density while normalized routing operators retain nontrivial structure. We derive limiting NNGP covariance and Neural Tangent Kernel recursions for structured sparse masks and establish sparse stochastic-block and random-pruning regimes where normalized graphlet operators preserve meaningful block and spectral structure.}
+  abstract={A binary pruning mask encodes which synaptic connections are retained or removed in a neural network and can be viewed as the biadjacency matrix of a directed bipartite graph. When retained density vanishes, its raw step graphon collapses in L1, even though each neuron may still aggregate a growing, structured neighborhood. We show that under local retained-fan-in scaling, the network instead sees the row-Markov routing operator P = D^{-1}M, which records the relative allocation of retained inputs. For two-hidden-layer networks with independent row-constrained block masks and growing minimum fan-in, we derive deterministic finite-dimensional NNGP covariance and initialization-time NTK limits across fixed- and vanishing-density regimes, prove density invariance, identify block-mass adjoints governing backward sensitivity, and resolve forward-backward weight reuse via Gaussian-conditioning decoupling.}
 }
 
 @article{mishra2026community,
@@ -20,27 +21,39 @@
   author={Mishra, Siddhi Kanta and Garibay, Ivan},
   journal={Learning on Graphs Conference (LoG)},
   series={Proceedings of Machine Learning Research (PMLR)},
+  note={forthcoming (Oct 2026)},
   year={2026},
   selected={true},
-  abstract={We connect edge-wise graph corruption to an exact trajectory in graphon space and characterize contraction of community and spectral modes under discrete graph diffusion. We derive finite-size structural signal-to-noise coordinates linking graph size, corruption level, and recoverability, yielding size-dependent information horizons for denoising with cross-size collapse and zero-shot transfer.}
+  abstract={At what noise level does a corrupted graph stop identifying the structure that generated it? We show that the answer depends on graph size, not diffusion time alone. Under binary edge refresh, every dense probability graphon follows the exact population trajectory Wt = rho + alpha_t(W0 - rho). To determine when a finite graph can still resolve the contracted structure, we specialize to stochastic block graphons and define the size-aware structural signal-to-noise ratio z_t. This separates three recovery regimes: weak detection begins at z_t = 1, consistency requires z_t -> infty, and exact recovery occurs at z_t^2 ~ log n. Reverse diffusion paths expose an alignment switch: crossing the source-information horizon causes reverse chains to lose alignment with the specific source partition while synthesizing fresh, coherent population-level community modes.}
 }
 
 @inproceedings{ornee2026mocdiff,
   abbr={ICMLW 2026},
   bibtex_show={true},
   title={MoCDiff: Efficient Motif-Constrained Discrete Diffusion for Molecule Generation},
-  author={Ornee, T. N. and Basher, M. J. I. and Mishra, Siddhi Kanta and Garibay, O. and Garibay, Ivan and Yousefi, N.},
-  booktitle={ICML Workshop on Generative and Agentic AI for Biology},
+  author={Ornee, Tasfia Nuzhat and Basher, Mohammad Jahid Ibna and Mishra, Siddhi Kanta and Garibay, Ozlem and Garibay, Ivan and Yousefi, Niloofar},
+  booktitle={ICML 2026 Workshop on Generative and Agentic AI for Biology},
   year={2026},
   selected={true},
-  abstract={We develop motif-constrained discrete diffusion methods for molecular graph generation under structural validity, novelty, diversity, and computational efficiency considerations, contributing motif-aware molecular representations and efficient constrained generation mechanisms.}
+  abstract={Molecular graph generation requires models that capture chemical structure while producing valid, diverse, and novel molecules within practical sampling budgets. We present MoCDiff, a Motif-Constrained masked Discrete Diffusion framework built on two complementary components: mSENT, a motif-aware graph-to-sequence tokenizer that biases graph traversal toward chemically coherent substructures while preserving exact graph decodability, and an optimized constrained sampler with inexact ALM updates, conditionally adaptive penalties, and lazy enforcement. On QM9, mSENT raises validity from 85.3% to 90.5% and uniqueness from 75.0% to 97.7% over standard SENT, while achieving a 1.62x speedup and 1.7x higher accepted-sample throughput over baseline CDD.}
+}
+
+@article{mishra2026learning_gnn,
+  abbr={Preprint},
+  bibtex_show={true},
+  title={Learning Where to Communicate in GNNs: Task-Conditioned Edge Scores Across Graph Sizes},
+  author={Mishra, Siddhi Kanta and Garibay, Ivan},
+  journal={Under review as a conference paper at ICLR 2027},
+  year={2026},
+  selected={true},
+  abstract={Graph neural networks succeed by moving information across edges, but which communication routes are actually useful for a given task? We develop a task-conditioned edge score that describes whether strengthening or weakening a route would locally improve the objective. The score couples the representation difference exchanged across a route with a backward sensitivity describing how that exchange affects the task, gated by activation derivatives. This allows useful heterophilous as well as homophilous communication. Graph limits provide a common population coordinate system for comparing these scores across resolutions. For nonlinear residual message passing with symmetric mean-normalized difference aggregation, we derive the exact score and prove finite-horizon consistency of topology learning. On METR-LA, scores from independently trained smaller models guide useful interventions on a larger frozen predictor.}
 }
 
 @inproceedings{rahimimovassagh2026beyond,
   abbr={ICLRW 2026},
   bibtex_show={true},
   title={Beyond Edge Prediction: Residual Set Modeling for Combinatorial Gene Regulation},
-  author={Rahimimovassagh, M. and Mishra, Siddhi Kanta and Garibay, Ivan and Yousefi, N.},
+  author={Rahimimovassagh, Maryam and Mishra, Siddhi Kanta and Garibay, Ivan and Yousefi, Niloofar},
   booktitle={Gen2 Workshop at ICLR 2026},
   year={2026},
   selected={false},
@@ -51,22 +64,11 @@
   abbr={ICLRW 2026},
   bibtex_show={true},
   title={From Edge Detection to Regulatory Logic Discovery: Residual Set Models for Exact Regulator Recovery in Gene Regulatory Networks},
-  author={Mishra, Siddhi Kanta and Rahimimovassagh, M. and Yousefi, N. and Garibay, Ivan},
+  author={Mishra, Siddhi Kanta and Rahimimovassagh, Maryam and Yousefi, Niloofar and Garibay, Ivan},
   booktitle={ICLR Machine Learning for Genomics Explorations (MLGenX) Workshop},
   year={2026},
   selected={false},
   abstract={Explores residual set models for exact regulator recovery in gene regulatory networks, moving beyond pairwise edge detection towards regulatory logic discovery.}
-}
-
-@inproceedings{rahimimovassagh2026learning,
-  abbr={ICLRW 2026},
-  bibtex_show={true},
-  title={Learning Residual Set Representations for Mechanistic Gene Regulation},
-  author={Rahimimovassagh, M. and Mishra, Siddhi Kanta and Garibay, Ivan and Yousefi, N.},
-  booktitle={ICLR Learning Meaningful Representations of Life (LMRL) Workshop},
-  year={2026},
-  selected={false},
-  abstract={Studies representation learning for mechanistic gene regulation using residual set formulations.}
 }
 
 @inproceedings{mishra2026graphons,
@@ -74,8 +76,10 @@
   bibtex_show={true},
   title={From Graphons to Graphlets: A Graph-Limit Lens on Sparse Neural Connectivity and Training},
   author={Mishra, Siddhi Kanta and Garibay, Ivan},
-  booktitle={NetSci Network Science Informs AI (NSIA) Satellite},
+  booktitle={Network Science Informs AI (NSIA) Satellite, NetSci 2026},
   year={2026},
+  url={https://network-science-ai.github.io/index.html},
+  note={Oral presentation on ongoing research, published as full proceedings at LoG 2026},
   selected={false},
-  abstract={Accepted oral presentation investigating graph-limit perspectives on sparse neural connectivity, training dynamics, and graphon-to-graphlet transitions.}
+  abstract={Invited oral presentation on ongoing research investigating graph-limit perspectives on sparse neural connectivity, training dynamics, and graphon-to-graphlet transitions, which was subsequently developed into our full proceedings paper at Learning on Graphs (LoG 2026).}
 }

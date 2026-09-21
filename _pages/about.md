@@ -6,8 +6,6 @@ subtitle: Doctoral Researcher in Industrial Engineering & Management Systems, Un
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
   more_info: >
     <p>Complex Adaptive Systems Laboratory (CASL)</p>
     <p>University of Central Florida</p>
@@ -25,14 +23,16 @@ latest_posts:
   enabled: false
 ---
 
-I am a Doctoral Researcher in Industrial Engineering and Management Systems at the **University of Central Florida (UCF)** and a Graduate Research Assistant in the **[Complex Adaptive Systems Laboratory (CASL)](https://casl.ucf.edu/)**, advised by **[Prof. Ivan Garibay](https://www.cecs.ucf.edu/faculty/ivan-garibay/)**. 
+I am a Doctoral Researcher in Industrial Engineering and Management Systems at the **University of Central Florida (UCF)** and a Graduate Research Assistant in the **[Complex Adaptive Systems Laboratory (CASL)](https://biomind-eng.github.io/biomind/labs/casl.html)**, advised by **[Prof. Ivan Garibay](https://www.cecs.ucf.edu/faculty/ivan-garibay/)**.
 
-Previously, I completed my **MS in Mathematics** at UCF (2022–2025) supported by the **UCF Dean's Fellowship**, and a **BS–MS Dual Degree in Mathematical Sciences** from the **[Indian Institute of Science Education and Research (IISER) Kolkata](https://www.iiserkol.ac.in/)** (2016–2021) supported by the **INSPIRE Fellowship** (Government of India).
+Previously, I earned an **MS in Mathematics** from UCF (2022–2025) supported by the **UCF Dean's Fellowship**, and a **BS–MS Dual Degree in Mathematical Sciences** from the **[Indian Institute of Science Education and Research (IISER) Kolkata](https://www.iiserkol.ac.in/)** (2016–2021) supported by the **INSPIRE Fellowship** from the Department of Science and Technology, Government of India.
 
-My research lies at the intersection of **theoretical machine learning, network science, and mathematical foundations of AI**, with particular focus on:
+My research lies at the intersection of **theoretical machine learning, graph limits, network science, and generative modeling**, focusing on continuous formulations that explain and guide learning on discrete, sparse, and multi-scale network structures.
 
-- **Graph Limits & Graphons**: Graphon analysis of discrete diffusion, community information horizons, finite-size structural SNR coordinates, and cross-size transfer.
-- **Sparse Neural Networks & NTK**: Normalized routing limits for width-growing sparse networks, neural tangent kernels, and prune-mask geometry preserving spectral structure under vanishing density.
-- **Graph Diffusion & Generative Models**: Discrete graph diffusion, motif-constrained molecular generation ([MoCDiff](https://icml.cc/)), and denoising dynamics.
-- **Task-Conditioned Message Passing**: Adjoint recursions for task loss sensitivity to communication routes, linking edge sensitivities across resolutions in population coordinate systems.
-- **Network Biology & Gene Regulation**: Combinatorial gene regulation and regulator-set discovery from single-cell transcriptomics.
+### Research Themes
+
+- **Task-Conditioned Communication & Graph Limits in GNNs**: Investigating which communication routes actually benefit a graph neural network solving a downstream task. I derive explicit, activation-gated task derivatives for population-level communication ($S_W$), demonstrating that task alignment can favor heterophilous as well as homophilous communication. By viewing graphons as population coordinate systems, I prove finite-horizon consistency of topology learning across resolutions and show that scores from smaller models guide effective topology interventions on larger, frozen predictors (evaluated on synthetic relational tasks and traffic networks like METR-LA).
+- **Normalized Routing Limits for Pruned Neural Networks**: Developing parameterization-faithful continuum limits for width-growing sparse neural networks under aggressive pruning. While raw adjacency graphons collapse in $L^1$ under vanishing edge density, local retained-fan-in scaling exposes a stable row-Markov routing operator ($P = D^{-1}M$). For two-hidden-layer networks, I establish deterministic finite-dimensional NNGP covariance and NTK limits across fixed- and vanishing-density regimes, prove density invariance, identify block-mass adjoints ($B^{(2)\dagger}$) governing backward sensitivity, and resolve forward–backward weight reuse through a Gaussian-conditioning decoupling argument.
+- **Community Information Horizons in Discrete Graph Diffusion**: Establishing exact continuous graphon trajectories ($W_t = \rho + \bar{\alpha}_t(W_0 - \rho)$) and mode-contraction dynamics under discrete binary edge refresh. By introducing a size-aware structural signal-to-noise ratio ($z_t = \frac{\bar{\alpha}_t \Delta \sqrt{n}}{\sqrt{p_t(1 - p_t)}}$), I characterize three fundamental recovery regimes—weak detection ($z_t = 1$), consistency ($z_t \to \infty$), and exact recovery ($z_t^2 \asymp \log n$). This analysis reveals an *alignment switch*, where reverse diffusion chains cross the source-information horizon, lose alignment with the original source partition, and synthesize fresh, coherent population-level community modes.
+- **Combinatorial Gene Regulation via Exact Set Discovery**: Reframing gene regulatory network (GRN) inference from traditional pairwise edge prediction into an exact combinatorial regulator set discovery problem. I developed a two-stage filter-and-refine pipeline using context-aware attention retrieval followed by Residual HOS2—a residual high-order set model that captures non-additive transcription factor interactions on top of a decomposable pairwise base.
+- **Motif-Constrained Molecular Diffusion (MoCDiff)**: Addressing tokenization and sampling bottlenecks in discrete molecular diffusion. We develop mSENT, a motif-aware graph-to-sequence serialization policy that preserves rigid chemical substructures (rings, aromatic cores) as contiguous token spans while maintaining full exact graph decodability, paired with an optimized constrained diffusion sampler (inexact ALM, lazy projection) to drastically improve sampling throughput.

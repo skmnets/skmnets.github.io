@@ -1,14 +1,15 @@
 cv:
   name: Siddhi Kanta Mishra
   label: Doctoral Researcher
-  email: SiddhiKanta.Mishra@ucf.edu
   location: Orlando, FL
   image: ""
-  summary: Doctoral Researcher at University of Central Florida (CASL) working on graph machine learning, graphons, sparse neural networks, and generative models.
+  summary: Doctoral Researcher in Industrial Engineering & Management Systems at the University of Central Florida (CASL), working on graph machine learning, graphons, sparse neural networks, and generative diffusion models.
 
   social_networks:
     - network: LinkedIn
       username: siddhi-kanta-mishra-9b7487133
+    - network: Google Scholar
+      username: Rd2vryMAAAAJ
 
   sections:
     Education:
@@ -38,7 +39,7 @@ cv:
         start_date: 2016
         end_date: 2021
         highlights:
-          - "MS Project: Role of Social Networks in Employment."
+          - "MS Project: Role of Social Networks in Employment (graph-theoretic and probabilistic labor-market models)."
           - "INSPIRE Fellowship, Government of India."
 
     Experience:
@@ -80,8 +81,8 @@ cv:
         highlights:
           - "CAP 6318: Computational Analysis of Social Complexity (Fall 2025, Fall 2026)"
           - "CAP 6640: Computer Understanding of Natural Language, MSDA Program (Spring 2026)"
-          - "STA 6704: Statistical Data Mining Methodology II, MSDA Program (Summer 2026)"
-          - "STA 5206: Statistical Analysis (Fall 2025)"
+          - "STA 6704: Statistical Data Mining Methodology II, MSDA Program (Summer 2025, Summer 2026)"
+          - "STA 5206: Statistical Analysis (Fall 2025, Summer 2026)"
           - "MSDA Bridge Program (Statistics and Computer Science, Summer 2025)"
           - "Mathematics Success Center / MALL (2022–2025)"
 
@@ -113,27 +114,26 @@ cv:
       - name: Programming & Scientific Computing
         keywords: "Python, PyTorch, NumPy, SciPy, scikit-learn, NetworkX, pandas, Matplotlib, R, MATLAB, LaTeX"
 
-      - name: Machine Learning & Networks
-        keywords: "Graph Neural Networks, Graphons, Graph Limits, NTK / NNGP Analysis, Discrete Diffusion Models, Stochastic Block Models, Spectral Graph Theory"
+      - name: Machine Learning & Network Methods
+        keywords: "Graph Neural Networks, Graphons, Graph Limits, NTK / NNGP Analysis, Discrete Diffusion Models, Stochastic Block Models, Spectral Graph Theory, Nonparametric Estimation"
 
-      - name: Research
-        keywords: "Mathematical Modeling, Theoretical Machine Learning, Reproducible Scientific Experiments"
+    Extracurricular Activities and Service:
+      - company: Rubik's Cube
+        position: Professional Speedcuber
+        summary: "Professional speedcuber with sub-9s average; East India Regional Champion 2017. Conducted speed-cubing workshops with Vedic Maths India and at FU Berlin during the Long Night of Sciences 2018; featured in an Exide Industries commercial. Founded the Rubik's Club at IISER Kolkata in 2018 and the All IISER Cubing Society in 2021."
 
-    Service:
-      - company: University of Central Florida / CASL
-        position: Event Host & Coordinator
-        start_date: 2026
-        end_date: 2026
-        summary: "Hosted and coordinated invited CASL/UCF research talk by Tobias Krieman."
+      - company: Inquivesta, IISER Kolkata
+        position: Fest Coordinator
+        summary: "Organized WCA-affiliated Rubik's Cube competitions as part of the institute's annual science and culture festival."
 
-      - company: IISER Kolkata
+      - company: Center for Career Development, IISER Kolkata
         position: Student Coordinator
         start_date: 2019
         end_date: 2021
-        summary: "Center for Career Development."
+        summary: "Facilitated campus recruitment drives, alumni mentorship, and career development programming for students."
 
-      - company: Cubing Societies
-        position: Founder & Co-founder
-        start_date: 2018
+      - company: IISER Kolkata
+        position: Hostel Representative
+        start_date: 2019
         end_date: 2021
-        summary: "Founder, Rubik's Club at IISER Kolkata (2018); Co-founder, All IISER Cubing Society (2021)."
+        summary: "Elected student representative for campus residential affairs and student life."
