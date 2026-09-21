@@ -1,29 +1,27 @@
 ---
 layout: page
 title: Normalized Routing Limits for Pruned Neural Networks
-description: NNGP and NTK across density regimes under local retained-fan-in scaling. Forthcoming in PMLR at LoG 2026.
+description: NNGP and NTK limits across density regimes under local retained-fan-in scaling. Forthcoming in PMLR at LoG 2026.
 importance: 1
 category: Research
 related_publications: true
 ---
 
-### Overview
+### Question
 
-Pruning removes selected synaptic connections from a neural network, modifying its effective biadjacency structure. As wide neural networks are pruned more aggressively, retained connection density vanishes ($p_n \to 0$). Under standard dense graph limit formulations, raw step graphons collapse to zero in $L^1$, failing to capture that individual neurons continue to aggregate growing, structured neighborhoods.
+When a wide neural network is pruned so aggressively that connection density vanishes ($p_n \to 0$), standard dense graph limits (step graphons) collapse to zero in $L^1$, failing to reflect that individual neurons continue to aggregate growing, structured inputs. What continuum object captures this limiting behavior, and how does pruning affect kernel behavior across density regimes?
 
-This work establishes a parameterization-faithful continuum limit for width-growing sparse neural networks under local retained-fan-in scaling ($1/\sqrt{d_i}$). Under this scaling, the network does not see raw adjacency mass; instead, it observes the **row-Markov routing operator** $P = D^{-1}M$, which records the relative allocation of retained inputs entering each neuron.
+### Key Idea
 
-### Theoretical Contributions
+Under local retained-fan-in normalization ($1/\sqrt{d_i}$), the network does not see raw adjacency mass; instead, it observes a **row-Markov routing operator** $P = D^{-1}M$, which records the relative allocation of retained inputs entering each neuron. We analyze two-hidden-layer networks under independent row-constrained block masks with minimum fan-in growing faster than logarithmically ($k_{\min, n}/\log n \to \infty$).
 
-- **Deterministic NNGP & NTK Limits**: For two-hidden-layer networks with independent row-constrained block masks and minimum fan-in growing faster than logarithmically ($k_{\min, n}/\log n \to \infty$), we derive explicit finite-dimensional recursions for the limiting Neural Network Gaussian Process (NNGP) covariance $\Sigma_{\text{NR}}$ and initialization-time Neural Tangent Kernel (NTK) $\Theta_{\text{NR}}$.
-- **Forward vs. Backward Transport**: Forward covariance is transported by limiting block routing matrices $B^{(\ell)}$, whereas backward sensitivity is transported by their block-mass adjoints $B^{(\ell)\dagger} = \frac{1}{\pi^{(1)}_b} \sum_a \pi^{(2)}_a B^{(2)}_{ab} U_a$. This orientation difference reflects that forward message passing averages incoming sources, while backpropagation aggregates the load sent from targets back to sources.
-- **Gaussian-Conditioning Decoupling**: We resolve the long-standing forward-backward weight reuse problem without invoking heuristic "gradient independence" assumptions. By conditioning second-layer Gaussian weights on the subspace revealed during the forward pass, we prove that sensitivity error is strictly bounded by $\mathcal{O}(m / d_{\min, n}^{(2)})$, identifying $m / d_{\min, n}^{(2)} \to 0$ as the natural scale governing weight reuse as dataset size $m$ grows.
-- **Density Invariance**: We prove that mask sequences with matched routing and block proportions yield identical limiting NNGP and NTK objects, regardless of whether density is fixed ($0.2n$), polynomial ($n^{3/4}$), or polylogarithmic ($2(\log n)^2$).
+### Main Results
 
-### Empirical Findings
+- **Deterministic NNGP and NTK Limits**: We derive finite-dimensional recursions for the limiting Neural Network Gaussian Process (NNGP) covariance $\Sigma_{\text{NR}}$ and initialization-time Neural Tangent Kernel (NTK) $\Theta_{\text{NR}}$, establishing density invariance across fixed ($0.2n$), polynomial ($n^{3/4}$), and polylogarithmic ($2(\log n)^2$) regimes when routing and block proportions are matched.
+- **Forward vs. Backward Transport Asymmetry**: Forward covariance is transported by limiting block routing matrices $B^{(\ell)}$, whereas backward sensitivity is governed by block-mass adjoints $B^{(\ell)\dagger} = \frac{1}{\pi^{(1)}_b} \sum_a \pi^{(2)}_a B^{(2)}_{ab} U_a$, reflecting that forward passes average incoming sources while backpropagation aggregates load sent from targets.
+- **Gaussian-Conditioning Decoupling**: Conditioning second-layer Gaussian weights on the forward-pass subspace bounds sensitivity error by $\mathcal{O}(m / d_{\min, n}^{(2)})$, establishing that weight-reuse effects vanish as width and dataset size $m$ grow.
+- **Spectral Acceleration via Routing**: Altering source allocation while holding density, degree, data, and initialization seeds fixed shifts the label-relevant NTK gain $\tilde{g}_y$ from $1.35$ to $2.61$, directly predicting gradient-flow convergence speed.
 
-- **Controlled Density Interventions**: With smooth error-function ($\text{erf}$) activations across widths up to $n = 4096$, empirical NNGP and NTK errors approach the predicted population limit with log-log decay slopes near $-1/2$, exhibiting overlapping curves across all density regimes.
-- **Routing-Driven Spectral Acceleration**: Holding density, degree, data, and initialization seeds fixed while altering only source allocation shifts the label-relevant NTK gain $\tilde{g}_y$ from $1.35$ (noise-favoring) to $2.61$ (signal-favoring), directly predicting early gradient-flow optimization speed.
-- **Stress Tests**: Replicated under unbounded ReLU activations, analyzed finite-fan-in crossover thresholds ($k \ge 16$), and evaluated task-selected saliency masks from Fashion-MNIST SNIP, revealing how learned masks introduce mask-initialization coupling beyond pure routing.
+### Publication and Status
 
-*Accepted to the full proceedings track of the **Learning on Graphs Conference (LoG 2026)**; forthcoming in PMLR (Oct 2026). Preliminary ongoing research presented orally at the **NetSci 2026** NSIA Satellite.*
+Accepted at the **Learning on Graphs Conference (LoG 2026)**; forthcoming in the *Proceedings of Machine Learning Research (PMLR)*. Preliminary research presented as a contributed oral talk at the **NetSci 2026** NSIA Satellite.

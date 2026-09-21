@@ -1,9 +1,9 @@
 cv:
   name: Siddhi Kanta Mishra
-  label: Doctoral Researcher
+  label: PhD Student
   location: Orlando, FL
   image: ""
-  summary: Doctoral Researcher in Industrial Engineering & Management Systems at the University of Central Florida (CASL), working on graph machine learning, graphons, sparse neural networks, and generative diffusion models.
+  summary: PhD student in Industrial Engineering & Management Systems at the University of Central Florida (CASL), researching graph machine learning, graph limits, network science, sparse neural networks, and graph diffusion.
 
   social_networks:
     - network: LinkedIn
@@ -21,12 +21,12 @@ cv:
         end_date: present
         highlights:
           - "Expected Summer 2027. Advisor: Prof. Ivan Garibay."
-          - "Research focus: Graph-theoretic, graph-limit, and network-science perspectives on machine learning and AI systems."
+          - "Research focus: Graph machine learning, graph limits, and network science."
 
       - institution: University of Central Florida (UCF)
         location: Orlando, FL
-        area: Mathematics
-        studyType: MS
+        area: Mathematical Science
+        studyType: M.S.
         start_date: 2022
         end_date: 2025
         highlights:
@@ -40,7 +40,7 @@ cv:
         end_date: 2021
         highlights:
           - "MS Project: Role of Social Networks in Employment (graph-theoretic and probabilistic labor-market models)."
-          - "INSPIRE Fellowship, Government of India."
+          - "INSPIRE Scholarship for Higher Education (INSPIRE-SHE), Department of Science and Technology, Government of India."
 
     Experience:
       - company: Complex Adaptive Systems Laboratory (CASL), UCF
@@ -59,7 +59,7 @@ cv:
         location: Berlin, Germany
         start_date: 2018-05
         end_date: 2018-07
-        summary: "Supervisor: Prof. Gunter M. Ziegler"
+        summary: "Supervisor: Prof. Günter M. Ziegler"
         highlights:
           - "Participated in research and coursework in discrete mathematics, combinatorics, and discrete geometry, including the Berlin–Poznań–Hamburg Seminar."
 
@@ -71,6 +71,17 @@ cv:
         summary: "Supervisor: Prof. Sunil Paul"
         highlights:
           - "Surveyed systemic-risk models in banking networks (Eisenberg–Noe, DebtRank) and compared structural properties of Indian and Mexican interbank networks."
+
+    Publications:
+      - bullet: "**Normalized Routing Limits for Pruned Neural Networks: NNGP and NTK across Density Regimes.** Siddhi Kanta Mishra and Ivan Garibay. Accepted at the *Learning on Graphs Conference (LoG 2026)*; forthcoming in PMLR."
+      - bullet: "**Community Information Horizons in Discrete Graph Diffusion: A Graphon Analysis.** Siddhi Kanta Mishra and Ivan Garibay. Accepted at the *Learning on Graphs Conference (LoG 2026)*; forthcoming in PMLR."
+      - bullet: "**Learning Where to Communicate in GNNs: Task-Conditioned Edge Scores Across Graph Sizes.** Siddhi Kanta Mishra and Ivan Garibay. *Manuscript under review at ICLR 2027*."
+      - bullet: "**MoCDiff: Efficient Motif-Constrained Discrete Diffusion for Molecule Generation.** Tasfia Nuzhat Ornee, Mohammad Jahid Ibna Basher, Siddhi Kanta Mishra, Ozlem Garibay, Ivan Garibay, and Niloofar Yousefi. *ICML 2026 Workshop on Generative and Agentic AI for Biology*."
+      - bullet: "**Beyond Edge Prediction: Residual Set Modeling for Combinatorial Gene Regulation.** Maryam Rahimimovassagh, Siddhi Kanta Mishra, Ivan Garibay, and Niloofar Yousefi. *Gen² Workshop at ICLR 2026*."
+      - bullet: "**From Edge Detection to Regulatory Logic Discovery: Residual Set Models for Exact Regulator Recovery in Gene Regulatory Networks.** Siddhi Kanta Mishra, Maryam Rahimimovassagh, Niloofar Yousefi, and Ivan Garibay. *MLGenX Workshop at ICLR 2026*."
+
+    Selected Presentations:
+      - bullet: "**From Graphons to Graphlets: A Graph-Limit Lens on Sparse Neural Connectivity and Training.** Siddhi Kanta Mishra and Ivan Garibay. Contributed oral presentation at the *Network Science Informs AI (NSIA) Satellite, NetSci 2026* ([Presentation details](https://network-science-ai.github.io/index.html))."
 
     Teaching:
       - company: University of Central Florida
@@ -99,14 +110,14 @@ cv:
       - title: UCF Dean's Fellowship
         awarder: University of Central Florida
         date: 2022-08-01
-        summary: "Fellowship awarded for graduate studies in Mathematics."
+        summary: "Fellowship awarded for graduate studies in Mathematical Science."
 
-      - title: INSPIRE Fellowship
+      - title: INSPIRE Scholarship for Higher Education (INSPIRE-SHE)
         awarder: Department of Science and Technology, Government of India
         date: 2016-08-01
-        summary: "Prestigious national scholarship for top 1% students pursuing natural and basic sciences."
+        summary: "National scholarship awarded to students in the top 1% pursuing natural and basic sciences."
 
-      - title: JEE Advanced (99.3 percentile)
+      - title: JEE Advanced 2016 — approximately top 0.7%
         awarder: IITs / Government of India
         date: 2016-06-01
 
@@ -118,7 +129,7 @@ cv:
         keywords: "Graph Neural Networks, Graphons, Graph Limits, NTK / NNGP Analysis, Discrete Diffusion Models, Stochastic Block Models, Spectral Graph Theory, Nonparametric Estimation"
 
     Extracurricular Activities and Service:
-      - bullet: "**Rubik's Cube:** Professional speedcuber with sub-9s average; East India Regional Champion 2017. Conducted speed-cubing workshops with Vedic Maths India and at FU Berlin during the Long Night of Sciences 2018; featured in an Exide Industries commercial. Founded the Rubik's Club at IISER Kolkata in 2018 and the All IISER Cubing Society in 2021."
+      - bullet: "**Rubik's Cube:** Competitive speedcuber with sub-9s average; East India Regional Champion 2017. Conducted speed-cubing workshops with Vedic Maths India and at FU Berlin during the Long Night of Sciences 2018; featured in an Exide Industries commercial. Founded the Rubik's Club at IISER Kolkata in 2018 and the All IISER Cubing Society in 2021."
       - bullet: "**Fest Coordinator, Inquivesta, IISER Kolkata:** Organized WCA-affiliated Rubik's Cube competitions as part of the institute's annual science and culture festival."
       - bullet: "**Student Coordinator, Center for Career Development, IISER Kolkata** (2019--2021): Facilitated campus recruitment drives, alumni mentorship, and career development programming for students."
       - bullet: "**Hostel Representative, IISER Kolkata** (2019--2021)"

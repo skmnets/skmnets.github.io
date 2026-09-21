@@ -1,9 +1,12 @@
 # Social media links and academic identifiers
-# Displayed in the order defined here: Google Scholar, LinkedIn, OpenReview only
+# Displayed in the order defined here: Google Scholar, GitHub, Email, OpenReview, LinkedIn
 scholar_userid: Rd2vryMAAAAJ
-linkedin_username: siddhi-kanta-mishra-9b7487133
+github_username: skmnets
+email: SiddhiKanta.Mishra@ucf.edu
 
 custom_social:
   title: OpenReview
   url: https://openreview.net/profile?id=~Siddhi_Kanta_Mishra1
   logo: https://openreview.net/static/images/openreview_logo_512.png
+
+linkedin_username: siddhi-kanta-mishra-9b7487133
