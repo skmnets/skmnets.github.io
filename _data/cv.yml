@@ -118,22 +118,7 @@ cv:
         keywords: "Graph Neural Networks, Graphons, Graph Limits, NTK / NNGP Analysis, Discrete Diffusion Models, Stochastic Block Models, Spectral Graph Theory, Nonparametric Estimation"
 
     Extracurricular Activities and Service:
-      - company: Rubik's Cube
-        position: Professional Speedcuber
-        summary: "Professional speedcuber with sub-9s average; East India Regional Champion 2017. Conducted speed-cubing workshops with Vedic Maths India and at FU Berlin during the Long Night of Sciences 2018; featured in an Exide Industries commercial. Founded the Rubik's Club at IISER Kolkata in 2018 and the All IISER Cubing Society in 2021."
-
-      - company: Inquivesta, IISER Kolkata
-        position: Fest Coordinator
-        summary: "Organized WCA-affiliated Rubik's Cube competitions as part of the institute's annual science and culture festival."
-
-      - company: Center for Career Development, IISER Kolkata
-        position: Student Coordinator
-        start_date: 2019
-        end_date: 2021
-        summary: "Facilitated campus recruitment drives, alumni mentorship, and career development programming for students."
-
-      - company: IISER Kolkata
-        position: Hostel Representative
-        start_date: 2019
-        end_date: 2021
-        summary: "Elected student representative for campus residential affairs and student life."
+      - bullet: "**Rubik's Cube:** Professional speedcuber with sub-9s average; East India Regional Champion 2017. Conducted speed-cubing workshops with Vedic Maths India and at FU Berlin during the Long Night of Sciences 2018; featured in an Exide Industries commercial. Founded the Rubik's Club at IISER Kolkata in 2018 and the All IISER Cubing Society in 2021."
+      - bullet: "**Fest Coordinator, Inquivesta, IISER Kolkata:** Organized WCA-affiliated Rubik's Cube competitions as part of the institute's annual science and culture festival."
+      - bullet: "**Student Coordinator, Center for Career Development, IISER Kolkata** (2019--2021): Facilitated campus recruitment drives, alumni mentorship, and career development programming for students."
+      - bullet: "**Hostel Representative, IISER Kolkata** (2019--2021)"
